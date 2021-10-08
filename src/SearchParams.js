@@ -36,7 +36,6 @@ const SearchParams = () => {
             <label htmlFor="location">
                Location
                <input
-                  onCut={(e) => console.log(e)}
                   id="location"
                   onChange={(event) => setLocation(event.target.value)}
                   value={location}
