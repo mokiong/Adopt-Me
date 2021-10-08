@@ -1,0 +1,24 @@
+{
+   "name": "adopt-me",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mokiong/Adopt-Me.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/mokiong/Adopt-Me/issues"
+   },
+   "homepage": "https://github.com/mokiong/Adopt-Me#readme",
+   "devDependencies": {
+      "eslint": "^7.18.0",
+      "eslint-config-prettier": "^8.1.0"
+   }
+}
