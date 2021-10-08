@@ -1,26 +1,30 @@
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-// import Pet from './Pet';
 import SearchParams from './SearchParams';
-
-// const App = () => {
-//    return React.createElement('div', {}, [
-//       React.createElement('h1', {}, 'Adopt Me!'),
-//       React.createElement(Pet, {
-//          name: 'Luna',
-//          animal: 'dog',
-//          breed: 'havanese',
-//       }),
-//    ]);
-// };
+import Details from './Details';
 
 const App = () => {
    return (
       <div>
          <h1>Adopt Me!</h1>
-         <SearchParams />
+         <Router>
+            <Switch>
+               <Route path="/details/:id"></Route>
+               <Route path="/">
+                  <SearchParams />
+               </Route>
+            </Switch>
+            <Details />
+         </Router>
       </div>
    );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+   <StrictMode>
+      <App />
+   </StrictMode>,
+   document.getElementById('root')
+);
